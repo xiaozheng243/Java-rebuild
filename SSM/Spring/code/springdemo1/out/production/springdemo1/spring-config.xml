@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<beans xmlns="http://www.springframework.org/schema/beans"
+       xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+       xsi:schemaLocation="http://www.springframework.org/schema/beans http://www.springframework.org/schema/beans/spring-beans.xsd">
+
+    <bean id="userService" class="online.suiyu.service.impl.UserServiceImpl" init-method="init"
+          destroy-method="destroy">
+        <!--注入属性-->
+        <property name="name" value="小明"/>
+        <!--注入类-->
+        <property name="userDao" ref="userDao"/>
+    </bean>
+    <!--构造器注入-->
+    <bean id="userDao" class="online.suiyu.dao.impl.UserDaoImple">
+        <constructor-arg index="0" value="小红"/>
+        <constructor-arg name="password" value="xiaohong123"/>
+
+    </bean>
+    <!--数组注入-->
+    <bean id="collection" class="online.suiyu.service.impl.CollectionDemoImpl">
+        <property name="array">
+            <list>
+                <value>呵呵</value>
+                <value>嘿嘿</value>
+                <value>哈哈</value>
+            </list>
+        </property>
+        <property name="list">
+            <list>
+                <value>list0</value>
+                <value>list1</value>
+                <value>list2</value>
+            </list>
+        </property>
+        <property name="set">
+            <set>
+                <value>set0</value>
+                <value>set1</value>
+                <value>set2</value>
+            </set>
+        </property>
+        <property name="map">
+            <map>
+                <entry key="1" value="map0"/>
+                <entry key="2" value="map1"/>
+                <entry key="3" value="map2"/>
+            </map>
+        </property>
+    </bean>
+</beans>
