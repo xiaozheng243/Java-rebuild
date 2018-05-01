@@ -1,8 +1,6 @@
 package online.suiyu;
 
-import online.suiyu.service.UserService;
 import online.suiyu.service.impl.CollectionDemoImpl;
-import online.suiyu.service.impl.UserServiceImpl;
 import org.springframework.context.ApplicationContext;
 import org.springframework.context.support.ClassPathXmlApplicationContext;
 
