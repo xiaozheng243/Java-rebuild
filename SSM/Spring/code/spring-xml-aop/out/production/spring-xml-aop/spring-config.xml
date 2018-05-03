@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<beans xmlns="http://www.springframework.org/schema/beans"
+       xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:aop="http://www.springframework.org/schema/aop"
+       xsi:schemaLocation="http://www.springframework.org/schema/beans http://www.springframework.org/schema/beans/spring-beans.xsd http://www.springframework.org/schema/aop http://www.springframework.org/schema/aop/spring-aop.xsd">
+
+    <bean id="userService" class="online.suiyu.aopxml.service.impl.UserServiceImpl"/>
+    <bean id="userDao" class="online.suiyu.aopxml.dao.impl.UserDaoImpl"/>
+    <bean id="myAspect" class="online.suiyu.aopxml.MyAspect"/>
+
+    <aop:config>
+        <aop:pointcut id="save"
+                      expression="execution(public void online.suiyu.aopxml.service.impl.UserServiceImpl.save())"/>
+        <aop:aspect ref="myAspect">
+            <aop:before method="log"
+                        pointcut-ref="save"/>
+
+        </aop:aspect>
+    </aop:config>
+</beans>
