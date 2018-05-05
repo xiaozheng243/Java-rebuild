@@ -23,3 +23,41 @@ JdbcTemplate jdbcTemplate = (JdbcTemplate) applicationContext.getBean("jdbcTempl
 String sql = "insert into stu values(?,?)";
 jdbcTemplate.update(sql, 4, "Lisa");
 ```
+
+## 执行查询操作
+
+### 查询一条信息
+查询一条信息使用的是`JabcTemplate`类的`queryForObject`方法操作，因为该方法接收一个`RowMapper`接口，所以使用时需要一个实现RowMapper接口的类。
+
+类`BeanMapper`：
+```java
+class BeanMapper implements RowMapper<User> {
+
+    @Override
+    public User mapRow(ResultSet resultSet, int i) throws SQLException {
+        User user = new User();
+        user.setId(resultSet.getInt("id"));
+        user.setName(resultSet.getString("name"));
+        return user;
+    }
+}
+```
+使用：
+```java
+String sql = "select * from stu where id=?";
+User user = jdbcTemplate.queryForObject(sql, new BeanMapper(), 2);
+System.out.println(user);
+```
+
+### 查询多条信息
+
+使用query操作
+
+```java
+String sql = "select * from stu where name like ?";
+List<User> list = jdbcTemplate.query(sql, new BeanMapper(),"%s%");
+for (User user : list) {
+    System.out.println(user);
+}
+```
+也会接收一个RowMapper操作，因此，同样可以使用BeanMapper。
