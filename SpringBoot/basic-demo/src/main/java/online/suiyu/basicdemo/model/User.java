@@ -1,4 +1,4 @@
-package online.suiyu.basicdemo.domain;
+package online.suiyu.basicdemo.model;
 
 public class User {
     private int id;
