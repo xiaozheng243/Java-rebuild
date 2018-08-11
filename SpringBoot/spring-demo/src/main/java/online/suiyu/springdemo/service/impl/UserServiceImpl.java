@@ -1,5 +1,6 @@
 package online.suiyu.springdemo.service.impl;
 
+import com.github.pagehelper.PageHelper;
 import online.suiyu.springdemo.dao.UserDao;
 import online.suiyu.springdemo.entity.User;
 import online.suiyu.springdemo.service.UserService;
@@ -17,6 +18,13 @@ public class UserServiceImpl implements UserService {
 
     @Override
     public List<User> getAllUser() {
+        return userDao.getAllUser();
+    }
+
+    @Override
+    public List<User> getAllUser(int pageNum, int pageSize) {
+
+        PageHelper.startPage(pageNum, pageSize);
         return userDao.getAllUser();
     }
 

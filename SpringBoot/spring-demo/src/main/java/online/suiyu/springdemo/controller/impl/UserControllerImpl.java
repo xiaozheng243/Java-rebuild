@@ -34,10 +34,18 @@ public class UserControllerImpl implements UserController {
         return userService.getUserBySex(sex);
     }
 
-
+    @Override
     @ApiOperation(value = "获取所有的用户列表")
     @PostMapping(value = "/getalluser")
     public List<User> getAllUser() {
         return userService.getAllUser();
+    }
+
+    @Override
+    @ApiOperation(value = "获取所有的用户列表")
+    @PostMapping(value = "/getalluser1")
+    public List<User> getAllUser(@RequestParam(value = "pageNum", required = false, defaultValue = "1") int pageNum,
+                                 @RequestParam(value = "pageSize", required = false, defaultValue = "4") int pageSize) {
+        return userService.getAllUser(pageNum,pageSize);
     }
 }
