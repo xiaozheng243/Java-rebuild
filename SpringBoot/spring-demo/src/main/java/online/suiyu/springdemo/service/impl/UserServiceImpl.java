@@ -19,4 +19,9 @@ public class UserServiceImpl implements UserService {
     public List<User> getAllUser() {
         return userDao.getAllUser();
     }
+
+    @Override
+    public List<User> getUserBySex(String sex) {
+        return userDao.getUserBySex(sex);
+    }
 }
