@@ -7,4 +7,15 @@
             resultType="online.suiyu.springdemo.entity.User">
         SELECT * from user
     </select>
+
+    <!--if-->
+
+    <select id="selectUserOldman" resultType="online.suiyu.springdemo.entity.User">
+        select * from user
+        where 1=1
+        <if test="">
+          and sex='man'
+        </if>
+    </select>
+
 </mapper>
