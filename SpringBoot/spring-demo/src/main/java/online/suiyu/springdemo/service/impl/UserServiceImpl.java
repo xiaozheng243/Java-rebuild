@@ -32,4 +32,10 @@ public class UserServiceImpl implements UserService {
     public List<User> getUserBySex(String sex) {
         return userDao.getUserBySex(sex);
     }
+
+    @Override
+    public boolean addUsers(List<User> userList) {
+
+        return userDao.addUsers(userList) > 0;
+    }
 }

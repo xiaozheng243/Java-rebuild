@@ -11,4 +11,6 @@ public interface UserService {
     List<User> getAllUser(int pageNum, int pageSize);
 
     List<User> getUserBySex(String sex);
+
+    boolean addUsers(List<User> userList);
 }

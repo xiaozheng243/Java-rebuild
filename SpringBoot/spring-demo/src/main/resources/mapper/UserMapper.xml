@@ -8,14 +8,13 @@
         SELECT * from user
     </select>
 
-    <!--if-->
+    <!--插入user as list-->
+    <insert id="addUsers">
+        insert into user values
+        <foreach collection="userList" item="user" separator=",">
+            (#{user.id},#{user.name},#{user.age},#{user.sex})
+        </foreach>
+    </insert>
 
-    <select id="selectUserOldman" resultType="online.suiyu.springdemo.entity.User">
-        select * from user
-        where 1=1
-        <if test="">
-          and sex='man'
-        </if>
-    </select>
 
 </mapper>

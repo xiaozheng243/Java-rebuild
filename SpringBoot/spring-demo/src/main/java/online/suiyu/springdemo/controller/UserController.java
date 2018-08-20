@@ -23,7 +23,7 @@ public class UserController {
     private UserService userService;
 
 
-    @ApiOperation(value = "字符串返回数据测试", notes = "测试方法", tags = "hello")
+    @ApiOperation(value = "字符串返回数据测试")
     @PostMapping(value = "/hello")
     public String index() {
         logger.info("文本测试");
@@ -47,5 +47,11 @@ public class UserController {
     public List<User> getAllUser(@RequestParam(value = "pageNum", required = false, defaultValue = "1") int pageNum,
                                  @RequestParam(value = "pageSize", required = false, defaultValue = "4") int pageSize) {
         return userService.getAllUser(pageNum, pageSize);
+    }
+
+    @ApiOperation(value = "插入多条语句")
+    @PostMapping(value = "/addUsers")
+    public boolean addUsers(@RequestBody(required = true) List<User> userList) {
+        return userService.addUsers(userList);
     }
 }

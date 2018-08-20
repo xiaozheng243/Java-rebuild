@@ -1,6 +1,7 @@
 package online.suiyu.springdemo.dao;
 
 import online.suiyu.springdemo.entity.User;
+import org.apache.ibatis.annotations.Param;
 import org.apache.ibatis.annotations.Select;
 import org.springframework.stereotype.Component;
 
@@ -12,4 +13,6 @@ public interface UserDao {
 
     @Select("select * from user where sex like #{sex}")
     List<User> getUserBySex(String sex);
+
+    int addUsers(@Param("userList") List<User> userList);
 }
