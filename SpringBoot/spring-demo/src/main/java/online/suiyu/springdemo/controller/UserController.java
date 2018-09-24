@@ -4,7 +4,7 @@ package online.suiyu.springdemo.controller;
 import io.swagger.annotations.Api;
 import io.swagger.annotations.ApiOperation;
 import online.suiyu.springdemo.entity.User;
-import online.suiyu.springdemo.service.UserService;
+import online.suiyu.springdemo.service.IUserService;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
 import org.springframework.beans.factory.annotation.Autowired;
@@ -20,7 +20,7 @@ public class UserController {
     private Logger logger = LoggerFactory.getLogger(UserController.class);
 
     @Autowired
-    private UserService userService;
+    private IUserService userService;
 
 
     @ApiOperation(value = "字符串返回数据测试")
