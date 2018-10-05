@@ -19,9 +19,12 @@ import java.util.List;
 public class UserController {
 
     private Logger logger = LoggerFactory.getLogger(UserController.class);
+    private final IUserService userService;
 
     @Autowired
-    private IUserService userService;
+    public UserController(IUserService userService) {
+        this.userService = userService;
+    }
 
 
     @ApiOperation(value = "字符串返回数据测试")
@@ -53,7 +56,7 @@ public class UserController {
     @Transactional
     @ApiOperation(value = "插入多条语句")
     @PostMapping(value = "/addUsers")
-    public boolean addUsers(@RequestBody(required = true) List<User> userList) {
+    public boolean addUsers(@RequestBody List<User> userList) {
         return userService.addUsers(userList);
     }
 }
