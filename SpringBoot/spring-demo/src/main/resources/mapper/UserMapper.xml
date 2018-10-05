@@ -10,9 +10,9 @@
 
     <!--插入user as list-->
     <insert id="addUsers">
-        insert into user values
+        insert into user(name,age,sex) values
         <foreach collection="userList" item="user" separator=",">
-            (#{user.id},#{user.name},#{user.age},#{user.sex})
+            (#{user.name},#{user.age},#{user.sex})
         </foreach>
     </insert>
 

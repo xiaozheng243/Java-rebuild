@@ -8,6 +8,7 @@ import online.suiyu.springdemo.service.IUserService;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
 import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.transaction.annotation.Transactional;
 import org.springframework.web.bind.annotation.*;
 
 import java.util.List;
@@ -49,6 +50,7 @@ public class UserController {
         return userService.getAllUser(pageNum, pageSize);
     }
 
+    @Transactional
     @ApiOperation(value = "插入多条语句")
     @PostMapping(value = "/addUsers")
     public boolean addUsers(@RequestBody(required = true) List<User> userList) {
