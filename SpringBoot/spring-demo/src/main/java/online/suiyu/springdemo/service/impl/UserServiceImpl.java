@@ -7,6 +7,7 @@ import online.suiyu.springdemo.service.IUserService;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
 import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.data.redis.core.RedisTemplate;
 import org.springframework.stereotype.Service;
 import org.springframework.transaction.annotation.Transactional;
 
@@ -15,15 +16,26 @@ import java.util.List;
 @Service
 public class UserServiceImpl implements IUserService {
 
-    @Autowired
-    private UserDao userDao;
+    private final UserDao userDao;
+    private final RedisTemplate<Object, Object> redisTemplate;
 
+    @Autowired
+    public UserServiceImpl(UserDao userDao, RedisTemplate<Object, Object> redisTemplate) {
+        this.userDao = userDao;
+        this.redisTemplate = redisTemplate;
+    }
 
     private static Logger logger = LoggerFactory.getLogger("UserServiceImpl");
 
     @Override
     public List<User> getAllUser() {
-        return userDao.getAllUser();
+        List<User> userList = (List<User>) redisTemplate.opsForValue().get("allUser");
+        logger.info("是否有缓存：" + (userList != null));
+        if (null == userList) {
+            userList = userDao.getAllUser();
+            redisTemplate.opsForValue().set("allUser", userList);
+        }
+        return userList;
     }
 
     @Override
