@@ -37,3 +37,6 @@ eureka:
   client: #eureka client向server注册
     service-url:
       defaultZone: http://localhost:7001/eureka/ #注册地址
+  instance:
+    instance-id: microservicecloud-dept8001 #服务名
+    prefer-ip-address: true #是否显示服务IP地址
