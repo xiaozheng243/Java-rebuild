@@ -36,7 +36,7 @@ logging:
 eureka:
   client: #eureka client向server注册
     service-url:
-      defaultZone: http://localhost:7001/eureka/ #注册地址
+      defaultZone: http://eureka2-server.com:7001/eureka/ #注册地址
   instance:
     instance-id: micro-client8082 #服务名
     prefer-ip-address: true #是否显示服务IP地址
