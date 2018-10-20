@@ -1,0 +1,9 @@
+server:
+  port: 7002
+eureka:
+  instance:
+    hostname: eureka2-service.com
+  client:
+    register-with-eureka: false
+    fetch-registry: false
+    eureka-server-u-r-l-context: http://${eureka.instance.hostname}:${server.port}/eureka/

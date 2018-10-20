@@ -1,0 +1,42 @@
+server:
+  port: 8082
+spring:
+  datasource:
+    driver-class-name: com.mysql.jdbc.Driver
+    username: root
+    password: suiyu
+    url: jdbc:mysql://localhost:3306/school
+    type: com.alibaba.druid.pool.DruidDataSource
+    dbcp2:
+      initial-size: 5
+      min-idle: 5
+      max-wait-millis: 200
+      max-total: 5
+  redis:
+    host: localhost
+    port: 6379
+  application:
+    name: eureka-client1
+
+
+mybatis:
+  mapper-locations: classpath:mapper/*.xml
+  type-aliases-package: online.suiyu.springdemo.entity
+
+#配置pagehelper
+pagehelper:
+  helper-dialect: mysql
+  reasonable: true
+  support-methods-arguments: true
+  params: count=countSql
+
+#添加日志输出
+logging:
+  path: logs/
+eureka:
+  client: #eureka client向server注册
+    service-url:
+      defaultZone: http://localhost:7001/eureka/ #注册地址
+  instance:
+    instance-id: micro-client8082 #服务名
+    prefer-ip-address: true #是否显示服务IP地址

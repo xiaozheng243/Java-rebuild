@@ -1,9 +1,3 @@
-server:
-  port: 7001
-eureka:
-  instance:
-    hostname: localhost
-  client:
-    register-with-eureka: false
-    fetch-registry: false
-    eureka-server-u-r-l-context: http://${eureka.instance.hostname}:${server.port}/eureka/
+spring:
+  profiles:
+    active: test
