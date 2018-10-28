@@ -70,3 +70,97 @@
 2018-10-20 17:47:52.285  INFO 12260 --- [Thread-6] o.s.c.n.eureka.InstanceInfoFactory       : Setting initial instance status as: STARTING
 2018-10-20 17:47:52.292  INFO 12260 --- [Thread-6] o.s.c.n.e.s.EurekaServiceRegistry        : Unregistering application eureka-client1 with eureka with status DOWN
 2018-10-20 17:47:52.311  INFO 12260 --- [Thread-6] o.s.c.support.DefaultLifecycleProcessor  : Stopping beans in phase 0
+2018-10-20 17:48:08.308  INFO 12084 --- [main] o.s.e.EurekaClient1Application           : No active profile set, falling back to default profiles: default
+2018-10-20 17:48:08.352  INFO 12084 --- [main] ConfigServletWebServerApplicationContext : Refreshing org.springframework.boot.web.servlet.context.AnnotationConfigServletWebServerApplicationContext@6adede5: startup date [Sat Oct 20 17:48:08 CST 2018]; parent: org.springframework.context.annotation.AnnotationConfigApplicationContext@61443d8f
+2018-10-20 17:48:09.275  WARN 12084 --- [main] o.m.s.mapper.ClassPathMapperScanner      : No MyBatis mapper was found in '[online.suiyu.eurekaclient1]' package. Please check your configuration.
+2018-10-20 17:48:09.392  INFO 12084 --- [main] .s.d.r.c.RepositoryConfigurationDelegate : Multiple Spring Data modules found, entering strict repository configuration mode!
+2018-10-20 17:48:10.176  INFO 12084 --- [main] o.s.cloud.context.scope.GenericScope     : BeanFactory id=66df29b6-ee35-3803-bb7f-545a42e94637
+2018-10-20 17:48:10.282  INFO 12084 --- [main] f.a.AutowiredAnnotationBeanPostProcessor : JSR-330 'javax.inject.Inject' annotation found and supported for autowiring
+2018-10-20 17:48:10.552  INFO 12084 --- [main] trationDelegate$BeanPostProcessorChecker : Bean 'org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration' of type [org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration$$EnhancerBySpringCGLIB$$5d61b43b] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2018-10-20 17:48:10.661  INFO 12084 --- [main] trationDelegate$BeanPostProcessorChecker : Bean 'org.springframework.cloud.autoconfigure.ConfigurationPropertiesRebinderAutoConfiguration' of type [org.springframework.cloud.autoconfigure.ConfigurationPropertiesRebinderAutoConfiguration$$EnhancerBySpringCGLIB$$797bb738] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2018-10-20 17:48:12.177  INFO 12084 --- [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port(s): 8081 (http)
+2018-10-20 17:48:12.267  INFO 12084 --- [main] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2018-10-20 17:48:12.269  INFO 12084 --- [main] org.apache.catalina.core.StandardEngine  : Starting Servlet Engine: Apache Tomcat/8.5.34
+2018-10-20 17:48:12.292  INFO 12084 --- [localhost-startStop-1] o.a.catalina.core.AprLifecycleListener   : The APR based Apache Tomcat Native library which allows optimal performance in production environments was not found on the java.library.path: [C:\Program Files (x86)\Common Files\Oracle\Java\javapath;C:\WINDOWS\Sun\Java\bin;C:\WINDOWS\system32;C:\WINDOWS;C:\Program Files\Git\mingw64\bin;C:\Program Files\Git\usr\bin;C:\Users\yuluo\bin;C:\Program Files (x86)\Common Files\Oracle\Java\javapath;C:\WINDOWS\system32;C:\WINDOWS;C:\WINDOWS\System32\Wbem;C:\WINDOWS\System32\WindowsPowerShell\v1.0;C:\WINDOWS\System32\OpenSSH;C:\Program Files\Java\jdk1.8.0_181\bin;C:\Program Files\nodejs;C:\Program Files\Git\cmd;D:\apache-maven-3.5.4\bin;C:\Program Files\MySQL\MySQL Server 8.0\bin;C:\Program Files\Redis;C:\Users\yuluo\AppData\Local\Programs\Python\Python37-32\Scripts;C:\Users\yuluo\AppData\Local\Programs\Python\Python37-32;C:\Users\yuluo\AppData\Local\Microsoft\WindowsApps;C:\Users\yuluo\AppData\Local\Programs\Microsoft VS Code\bin;C:\Users\yuluo\AppData\Roaming\npm;.]
+2018-10-20 17:48:12.543  INFO 12084 --- [localhost-startStop-1] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2018-10-20 17:48:12.546  INFO 12084 --- [localhost-startStop-1] o.s.web.context.ContextLoader            : Root WebApplicationContext: initialization completed in 4194 ms
+2018-10-20 17:48:12.810  INFO 12084 --- [localhost-startStop-1] o.s.b.w.servlet.ServletRegistrationBean  : Servlet dispatcherServlet mapped to [/]
+2018-10-20 17:48:12.826  INFO 12084 --- [localhost-startStop-1] o.s.b.w.servlet.FilterRegistrationBean   : Mapping filter: 'characterEncodingFilter' to: [/*]
+2018-10-20 17:48:12.826  INFO 12084 --- [localhost-startStop-1] o.s.b.w.servlet.FilterRegistrationBean   : Mapping filter: 'hiddenHttpMethodFilter' to: [/*]
+2018-10-20 17:48:12.826  INFO 12084 --- [localhost-startStop-1] o.s.b.w.servlet.FilterRegistrationBean   : Mapping filter: 'httpPutFormContentFilter' to: [/*]
+2018-10-20 17:48:12.826  INFO 12084 --- [localhost-startStop-1] o.s.b.w.servlet.FilterRegistrationBean   : Mapping filter: 'requestContextFilter' to: [/*]
+2018-10-20 17:48:13.060  WARN 12084 --- [main] c.n.c.sources.URLConfigurationSource     : No URLs will be polled as dynamic configuration sources.
+2018-10-20 17:48:13.061  INFO 12084 --- [main] c.n.c.sources.URLConfigurationSource     : To enable URLs as dynamic configuration sources, define System property archaius.configurationSource.additionalUrls or make config.properties available on classpath.
+2018-10-20 17:48:13.079  WARN 12084 --- [main] c.n.c.sources.URLConfigurationSource     : No URLs will be polled as dynamic configuration sources.
+2018-10-20 17:48:13.082  INFO 12084 --- [main] c.n.c.sources.URLConfigurationSource     : To enable URLs as dynamic configuration sources, define System property archaius.configurationSource.additionalUrls or make config.properties available on classpath.
+2018-10-20 17:48:13.427  INFO 12084 --- [main] o.s.w.s.handler.SimpleUrlHandlerMapping  : Mapped URL path [/**/favicon.ico] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+2018-10-20 17:48:14.237  INFO 12084 --- [main] s.w.s.m.m.a.RequestMappingHandlerAdapter : Looking for @ControllerAdvice: org.springframework.boot.web.servlet.context.AnnotationConfigServletWebServerApplicationContext@6adede5: startup date [Sat Oct 20 17:48:08 CST 2018]; parent: org.springframework.context.annotation.AnnotationConfigApplicationContext@61443d8f
+2018-10-20 17:48:14.440  INFO 12084 --- [main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/error]}" onto public org.springframework.http.ResponseEntity<java.util.Map<java.lang.String, java.lang.Object>> org.springframework.boot.autoconfigure.web.servlet.error.BasicErrorController.error(javax.servlet.http.HttpServletRequest)
+2018-10-20 17:48:14.440  INFO 12084 --- [main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/error],produces=[text/html]}" onto public org.springframework.web.servlet.ModelAndView org.springframework.boot.autoconfigure.web.servlet.error.BasicErrorController.errorHtml(javax.servlet.http.HttpServletRequest,javax.servlet.http.HttpServletResponse)
+2018-10-20 17:48:14.559  INFO 12084 --- [main] o.s.w.s.handler.SimpleUrlHandlerMapping  : Mapped URL path [/webjars/**] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+2018-10-20 17:48:14.559  INFO 12084 --- [main] o.s.w.s.handler.SimpleUrlHandlerMapping  : Mapped URL path [/**] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+2018-10-20 17:48:19.471  INFO 12084 --- [main] o.s.j.e.a.AnnotationMBeanExporter        : Registering beans for JMX exposure on startup
+2018-10-20 17:48:19.488  INFO 12084 --- [main] o.s.j.e.a.AnnotationMBeanExporter        : Bean with name 'dataSource' has been autodetected for JMX exposure
+2018-10-20 17:48:19.504  INFO 12084 --- [main] o.s.j.e.a.AnnotationMBeanExporter        : Bean with name 'refreshScope' has been autodetected for JMX exposure
+2018-10-20 17:48:19.507  INFO 12084 --- [main] o.s.j.e.a.AnnotationMBeanExporter        : Bean with name 'configurationPropertiesRebinder' has been autodetected for JMX exposure
+2018-10-20 17:48:19.510  INFO 12084 --- [main] o.s.j.e.a.AnnotationMBeanExporter        : Bean with name 'environmentManager' has been autodetected for JMX exposure
+2018-10-20 17:48:19.532  INFO 12084 --- [main] o.s.j.e.a.AnnotationMBeanExporter        : Located managed bean 'environmentManager': registering with JMX server as MBean [org.springframework.cloud.context.environment:name=environmentManager,type=EnvironmentManager]
+2018-10-20 17:48:19.571  INFO 12084 --- [main] o.s.j.e.a.AnnotationMBeanExporter        : Located managed bean 'refreshScope': registering with JMX server as MBean [org.springframework.cloud.context.scope.refresh:name=refreshScope,type=RefreshScope]
+2018-10-20 17:48:19.645  INFO 12084 --- [main] o.s.j.e.a.AnnotationMBeanExporter        : Located managed bean 'configurationPropertiesRebinder': registering with JMX server as MBean [org.springframework.cloud.context.properties:name=configurationPropertiesRebinder,context=6adede5,type=ConfigurationPropertiesRebinder]
+2018-10-20 17:48:19.670  INFO 12084 --- [main] o.s.j.e.a.AnnotationMBeanExporter        : Located MBean 'dataSource': registering with JMX server as MBean [com.alibaba.druid.pool:name=dataSource,type=DruidDataSource]
+2018-10-20 17:48:19.684  INFO 12084 --- [main] o.s.c.support.DefaultLifecycleProcessor  : Starting beans in phase 0
+2018-10-20 17:48:19.753  INFO 12084 --- [main] o.s.c.n.eureka.InstanceInfoFactory       : Setting initial instance status as: STARTING
+2018-10-20 17:48:19.887  INFO 12084 --- [main] com.netflix.discovery.DiscoveryClient    : Initializing Eureka in region us-east-1
+2018-10-20 17:48:21.132  INFO 12084 --- [main] c.n.d.provider.DiscoveryJerseyProvider   : Using JSON encoding codec LegacyJacksonJson
+2018-10-20 17:48:21.134  INFO 12084 --- [main] c.n.d.provider.DiscoveryJerseyProvider   : Using JSON decoding codec LegacyJacksonJson
+2018-10-20 17:48:21.514  INFO 12084 --- [main] c.n.d.provider.DiscoveryJerseyProvider   : Using XML encoding codec XStreamXml
+2018-10-20 17:48:21.514  INFO 12084 --- [main] c.n.d.provider.DiscoveryJerseyProvider   : Using XML decoding codec XStreamXml
+2018-10-20 17:48:22.233  INFO 12084 --- [main] c.n.d.s.r.aws.ConfigClusterResolver      : Resolving eureka endpoints via configuration
+2018-10-20 17:48:22.901  INFO 12084 --- [main] com.netflix.discovery.DiscoveryClient    : Disable delta property : false
+2018-10-20 17:48:22.902  INFO 12084 --- [main] com.netflix.discovery.DiscoveryClient    : Single vip registry refresh property : null
+2018-10-20 17:48:22.903  INFO 12084 --- [main] com.netflix.discovery.DiscoveryClient    : Force full registry fetch : false
+2018-10-20 17:48:22.903  INFO 12084 --- [main] com.netflix.discovery.DiscoveryClient    : Application is null : false
+2018-10-20 17:48:22.904  INFO 12084 --- [main] com.netflix.discovery.DiscoveryClient    : Registered Applications size is zero : true
+2018-10-20 17:48:22.904  INFO 12084 --- [main] com.netflix.discovery.DiscoveryClient    : Application version is -1: true
+2018-10-20 17:48:22.905  INFO 12084 --- [main] com.netflix.discovery.DiscoveryClient    : Getting all instance registry info from the eureka server
+2018-10-20 17:48:26.234  INFO 12084 --- [main] com.netflix.discovery.DiscoveryClient    : The response status is 200
+2018-10-20 17:48:26.237  INFO 12084 --- [main] com.netflix.discovery.DiscoveryClient    : Starting heartbeat executor: renew interval is: 30
+2018-10-20 17:48:26.243  INFO 12084 --- [main] c.n.discovery.InstanceInfoReplicator     : InstanceInfoReplicator onDemand update allowed rate per min is 4
+2018-10-20 17:48:26.258  INFO 12084 --- [main] com.netflix.discovery.DiscoveryClient    : Discovery Client initialized at timestamp 1540028906254 with initial instances count: 0
+2018-10-20 17:48:26.271  INFO 12084 --- [main] o.s.c.n.e.s.EurekaServiceRegistry        : Registering application eureka-client1 with eureka with status UP
+2018-10-20 17:48:26.274  INFO 12084 --- [main] com.netflix.discovery.DiscoveryClient    : Saw local status change event StatusChangeEvent [timestamp=1540028906274, current=UP, previous=STARTING]
+2018-10-20 17:48:26.288  INFO 12084 --- [DiscoveryClient-InstanceInfoReplicator-0] com.netflix.discovery.DiscoveryClient    : DiscoveryClient_EUREKA-CLIENT1/micro-client:8081: registering service...
+2018-10-20 17:48:26.508  INFO 12084 --- [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port(s): 8081 (http) with context path ''
+2018-10-20 17:48:26.531  INFO 12084 --- [main] .s.c.n.e.s.EurekaAutoServiceRegistration : Updating port to 8081
+2018-10-20 17:48:26.538  INFO 12084 --- [main] o.s.e.EurekaClient1Application           : Started EurekaClient1Application in 22.655 seconds (JVM running for 23.624)
+2018-10-20 17:48:27.686  INFO 12084 --- [DiscoveryClient-InstanceInfoReplicator-0] com.netflix.discovery.DiscoveryClient    : DiscoveryClient_EUREKA-CLIENT1/micro-client:8081 - registration status: 204
+2018-10-20 17:48:56.239  INFO 12084 --- [DiscoveryClient-CacheRefreshExecutor-0] com.netflix.discovery.DiscoveryClient    : Disable delta property : false
+2018-10-20 17:48:56.239  INFO 12084 --- [DiscoveryClient-CacheRefreshExecutor-0] com.netflix.discovery.DiscoveryClient    : Single vip registry refresh property : null
+2018-10-20 17:48:56.239  INFO 12084 --- [DiscoveryClient-CacheRefreshExecutor-0] com.netflix.discovery.DiscoveryClient    : Force full registry fetch : false
+2018-10-20 17:48:56.239  INFO 12084 --- [DiscoveryClient-CacheRefreshExecutor-0] com.netflix.discovery.DiscoveryClient    : Application is null : false
+2018-10-20 17:48:56.239  INFO 12084 --- [DiscoveryClient-CacheRefreshExecutor-0] com.netflix.discovery.DiscoveryClient    : Registered Applications size is zero : true
+2018-10-20 17:48:56.239  INFO 12084 --- [DiscoveryClient-CacheRefreshExecutor-0] com.netflix.discovery.DiscoveryClient    : Application version is -1: false
+2018-10-20 17:48:56.239  INFO 12084 --- [DiscoveryClient-CacheRefreshExecutor-0] com.netflix.discovery.DiscoveryClient    : Getting all instance registry info from the eureka server
+2018-10-20 17:48:57.315  INFO 12084 --- [DiscoveryClient-CacheRefreshExecutor-0] com.netflix.discovery.DiscoveryClient    : The response status is 200
+2018-10-20 17:53:22.994  INFO 12084 --- [AsyncResolver-bootstrap-executor-0] c.n.d.s.r.aws.ConfigClusterResolver      : Resolving eureka endpoints via configuration
+2018-10-20 17:58:23.095  INFO 12084 --- [AsyncResolver-bootstrap-executor-0] c.n.d.s.r.aws.ConfigClusterResolver      : Resolving eureka endpoints via configuration
+2018-10-20 18:03:23.099  INFO 12084 --- [AsyncResolver-bootstrap-executor-0] c.n.d.s.r.aws.ConfigClusterResolver      : Resolving eureka endpoints via configuration
+2018-10-20 18:08:23.103  INFO 12084 --- [AsyncResolver-bootstrap-executor-0] c.n.d.s.r.aws.ConfigClusterResolver      : Resolving eureka endpoints via configuration
+2018-10-20 18:13:23.108  INFO 12084 --- [AsyncResolver-bootstrap-executor-0] c.n.d.s.r.aws.ConfigClusterResolver      : Resolving eureka endpoints via configuration
+2018-10-20 18:18:23.112  INFO 12084 --- [AsyncResolver-bootstrap-executor-0] c.n.d.s.r.aws.ConfigClusterResolver      : Resolving eureka endpoints via configuration
+2018-10-20 18:28:39.551  INFO 12084 --- [AsyncResolver-bootstrap-executor-0] c.n.d.s.r.aws.ConfigClusterResolver      : Resolving eureka endpoints via configuration
+2018-10-20 18:33:39.553  INFO 12084 --- [AsyncResolver-bootstrap-executor-0] c.n.d.s.r.aws.ConfigClusterResolver      : Resolving eureka endpoints via configuration
+2018-10-20 18:38:39.562  INFO 12084 --- [AsyncResolver-bootstrap-executor-0] c.n.d.s.r.aws.ConfigClusterResolver      : Resolving eureka endpoints via configuration
+2018-10-20 18:43:39.572  INFO 12084 --- [AsyncResolver-bootstrap-executor-0] c.n.d.s.r.aws.ConfigClusterResolver      : Resolving eureka endpoints via configuration
+2018-10-20 18:48:39.581  INFO 12084 --- [AsyncResolver-bootstrap-executor-0] c.n.d.s.r.aws.ConfigClusterResolver      : Resolving eureka endpoints via configuration
+2018-10-20 18:53:39.627  INFO 12084 --- [AsyncResolver-bootstrap-executor-0] c.n.d.s.r.aws.ConfigClusterResolver      : Resolving eureka endpoints via configuration
+2018-10-20 18:53:51.815  INFO 12084 --- [Thread-6] ConfigServletWebServerApplicationContext : Closing org.springframework.boot.web.servlet.context.AnnotationConfigServletWebServerApplicationContext@6adede5: startup date [Sat Oct 20 17:48:08 CST 2018]; parent: org.springframework.context.annotation.AnnotationConfigApplicationContext@61443d8f
+2018-10-20 18:53:52.546  INFO 12084 --- [Thread-6] o.s.c.n.e.s.EurekaServiceRegistry        : Unregistering application eureka-client1 with eureka with status DOWN
+2018-10-20 18:53:52.650  WARN 12084 --- [Thread-6] com.netflix.discovery.DiscoveryClient    : Saw local status change event StatusChangeEvent [timestamp=1540032832622, current=DOWN, previous=UP]
+2018-10-20 18:53:52.689  INFO 12084 --- [DiscoveryClient-InstanceInfoReplicator-0] com.netflix.discovery.DiscoveryClient    : DiscoveryClient_EUREKA-CLIENT1/micro-client:8081: registering service...
+2018-10-20 18:53:53.834  INFO 12084 --- [DiscoveryClient-InstanceInfoReplicator-0] com.netflix.discovery.DiscoveryClient    : DiscoveryClient_EUREKA-CLIENT1/micro-client:8081 - registration status: 204
+2018-10-20 18:53:55.010  INFO 12084 --- [Thread-6] o.s.c.support.DefaultLifecycleProcessor  : Stopping beans in phase 0
+2018-10-20 18:53:57.376  INFO 12084 --- [Thread-6] o.s.j.e.a.AnnotationMBeanExporter        : Unregistering JMX-exposed beans on shutdown
+2018-10-20 18:53:57.569  INFO 12084 --- [Thread-6] o.s.j.e.a.AnnotationMBeanExporter        : Unregistering JMX-exposed beans
+2018-10-20 18:53:58.241  INFO 12084 --- [Thread-6] com.netflix.discovery.DiscoveryClient    : Shutting down DiscoveryClient ...
+2018-10-20 18:53:58.517  WARN 12084 --- [Thread-6] .s.c.a.CommonAnnotationBeanPostProcessor : Invocation of destroy method failed on bean with name 'scopedTarget.eurekaClient': org.springframework.beans.factory.BeanCreationNotAllowedException: Error creating bean with name 'eurekaInstanceConfigBean': Singleton bean creation not allowed while singletons of this factory are in destruction (Do not request a bean from a BeanFactory in a destroy method implementation!)

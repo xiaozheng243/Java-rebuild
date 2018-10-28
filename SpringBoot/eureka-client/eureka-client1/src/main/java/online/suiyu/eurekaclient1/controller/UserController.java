@@ -1,13 +1,14 @@
-package online.suiyu.springdemo.controller;
+package online.suiyu.eurekaclient1.controller;
 
 
 import io.swagger.annotations.Api;
 import io.swagger.annotations.ApiOperation;
-import online.suiyu.springdemo.entity.User;
-import online.suiyu.springdemo.service.IUserService;
+import online.suiyu.eurekaclient1.entity.User;
+import online.suiyu.eurekaclient1.service.IUserService;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
 import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.stereotype.Component;
 import org.springframework.transaction.annotation.Transactional;
 import org.springframework.web.bind.annotation.*;
 import org.springframework.web.client.RestTemplate;
@@ -16,18 +17,19 @@ import java.util.List;
 
 @Api(value = "User类")
 @RestController
+@Component
 @RequestMapping(value = "/index", method = RequestMethod.GET)
 public class UserController {
 
-    private static final String REST_URL_PREFIX = "http://MICROSERVICECLOUD-DEPT";
+//    private static final String REST_URL_PREFIX="";
     private Logger logger = LoggerFactory.getLogger(UserController.class);
     private final IUserService userService;
-    private final RestTemplate restTemplate;
+//    private final RestTemplate restTemplate;
 
     @Autowired
-    public UserController(IUserService userService, RestTemplate restTemplate) {
+    public UserController(IUserService userService) {
         this.userService = userService;
-        this.restTemplate = restTemplate;
+//        this.restTemplate = restTemplate;
     }
 
 

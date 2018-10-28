@@ -21,20 +21,18 @@ spring:
 
 mybatis:
   mapper-locations: classpath:mapper/*.xml
-  type-aliases-package: online.suiyu.springdemo.entity
+  type-aliases-package: online.suiyu.eurekaclient1.entity
 
-#????pagehelper
 pagehelper:
   helper-dialect: mysql
   reasonable: true
   support-methods-arguments: true
   params: count=countSql
 
-#?????????
 logging:
   path: logs/
 eureka:
-  client: #eureka client??server???
+  client:
     service-url:
       defaultZone: http://eureka1-server.com:7001/eureka/,http://eureka2-server.com:7002/eureka/,http://eureka3-server.com:7003/eureka/
   instance:

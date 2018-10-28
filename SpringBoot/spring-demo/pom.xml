@@ -120,6 +120,12 @@
             <artifactId>spring-cloud-starter-netflix-eureka-client</artifactId>
             <!--<version>1.4.5.RELEASE</version>-->
         </dependency>
+        <!--Ribbon-->
+        <dependency>
+            <groupId>org.springframework.cloud</groupId>
+            <artifactId>spring-cloud-starter-ribbon</artifactId>
+            <!--<version>1.4.5.RELEASE</version>-->
+        </dependency>
     </dependencies>
 
     <dependencyManagement>
