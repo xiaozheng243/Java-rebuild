@@ -1,5 +1,5 @@
-# Java
-## JavaEE基础
+# Java 学习计划
+## JavaEE基础 1
 
 ### 基础1
 * 常变量1
@@ -59,23 +59,25 @@
 ### Servlet
 * Tomcat
 * request/response
-## 其他 8
-### Docker 1
-### JVM 2
-### Linux 3
-## 微服务框架 7
+
+## 数据库 4
+### JDBC
+### Mysql/oracle
+### 连接池（Druid）
+### Redis
+## 工具 5
+### XML
+### JSON及解析
+### Maven
+### Git
+
+## 微服务框架 6
 ### SpringBoot
 * Eureka 1
 * Ribbon 2
 ### Spring
 ### Mybatis
-## 工具 6
-### XML
-### JSON及解析
-### Maven
-### Git
-## 数据库 5
-### JDBC
-### Mysql/oracle
-### 连接池（Druid）
-### Redis
+## 其他 7
+### Docker 1
+### JVM 2
+### Linux 3
