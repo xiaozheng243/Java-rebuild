@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN"
+        "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+
+<mapper namespace="online.yuluo.mybatisdemo.dao.IUserDao">
+    <resultMap id="userMap" type="online.yuluo.mybatisdemo.entity.UserVO">
+        <result column="USER_ID" property="userId" jdbcType="NUMERIC"/>
+        <result column="USER_NAME" property="userName" jdbcType="VARCHAR"/>
+        <result column="EMAIL" property="email" jdbcType="VARCHAR"/>
+        <result column="SEX" property="sex" jdbcType="VARCHAR"/>
+    </resultMap>
+
+
+    <!--插入user-->
+    <insert id="insertUser" useGeneratedKeys="true" keyColumn="USER_ID" keyProperty="userId"
+            parameterType="online.yuluo.mybatisdemo.entity.UserVO">
+        insert into TPL_USER_T(USER_ID,
+        USER_NAME,
+        EMAIL,
+        SEX) values(
+          TPL_USER_S.NEXTVAL,
+          #{userName,jdbcType=VARCHAR},
+          #{email,jdbcType=VARCHAR},
+          #{sex,jdbcType=VARCHAR}
+        )
+    </insert>
+
+
+</mapper>
