@@ -1,0 +1,11 @@
+server:
+  port: 6888
+eureka:
+  client:
+    fetch-registry: false
+    register-with-eureka: false
+    service-url:
+      defaultZone: http://peer1:${server.port}/eureka/
+spring:
+  application:
+    name: peer1

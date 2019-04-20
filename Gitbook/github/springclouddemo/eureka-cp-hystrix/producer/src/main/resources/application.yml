@@ -1,0 +1,9 @@
+server:
+  port: 6777
+eureka:
+  client:
+    service-url:
+      defaultZone: http://peer1:6888/eureka/
+spring:
+  application:
+    name: producer
