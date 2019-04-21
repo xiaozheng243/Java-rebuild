@@ -1,0 +1,20 @@
+server:
+  port: 8000
+spring:
+  application:
+    name: spring-config-server
+  cloud:
+    config:
+      server:
+        git:
+          uri: https://github.com/xiaozheng243/Java-rebuild/  # git repo absolute url
+          search-paths: Gitbook/github/springclouddemo/spring-config-git-decoupling/config-repo # relative url for uri,more split by ,
+          username: xiaozheng243  # the username for github
+          password: ****** # the password for github,do not forget to hide it when you want to commit it
+          default-label: master
+#  profiles:
+eureka:
+  client:
+    service-url:
+      defaultZone: http://peer1:7001/eureka/
+#    active: true  # we can also use local repo by this tag
