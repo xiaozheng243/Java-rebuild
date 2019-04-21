@@ -5,6 +5,7 @@
       <list>
         <option value="$PROJECT_DIR$/spring-server-git/pom.xml" />
         <option value="$PROJECT_DIR$/spring-client-git/pom.xml" />
+        <option value="$PROJECT_DIR$/spring-eureka/pom.xml" />
       </list>
     </option>
   </component>

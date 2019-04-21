@@ -6,18 +6,21 @@
         <sourceOutputDir name="target/generated-sources/annotations" />
         <sourceTestOutputDir name="target/generated-test-sources/test-annotations" />
         <outputRelativeToContentRoot value="true" />
-        <module name="spring-server-git" />
         <module name="spring-client-git" />
+        <module name="spring-eureka" />
+        <module name="spring-server-git" />
       </profile>
     </annotationProcessing>
     <bytecodeTargetLevel>
       <module name="spring-client-git" target="1.7" />
+      <module name="spring-eureka" target="1.7" />
       <module name="spring-server-git" target="1.7" />
     </bytecodeTargetLevel>
   </component>
   <component name="JavacSettings">
     <option name="ADDITIONAL_OPTIONS_OVERRIDE">
       <module name="spring-client-git" options="" />
+      <module name="spring-eureka" options="" />
       <module name="spring-server-git" options="" />
     </option>
   </component>
