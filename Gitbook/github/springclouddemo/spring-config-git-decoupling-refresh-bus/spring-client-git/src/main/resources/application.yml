@@ -1,0 +1,17 @@
+spring:
+  application:
+    name: spring-config-client
+  cloud:
+    bus:
+      trace:
+        enabled: false
+  rabbitmq:
+    host: 192.168.199.174
+    port: 8001
+    username:
+    password:
+server:
+  port: 8001
+management:
+  security:
+    enabled: false # 关闭安全验证
