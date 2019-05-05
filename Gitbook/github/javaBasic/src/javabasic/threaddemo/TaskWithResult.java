@@ -9,14 +9,17 @@ import java.util.concurrent.*;
  */
 public class TaskWithResult implements Callable<String> {
     private int id;
+
     public TaskWithResult(int id) {
         this.id = id;
     }
+
     @Override
-    public String call(){
+    public String call() {
         return "Executor " + id;
     }
-    public static void main(String[] args){
+
+    public static void main(String[] args) {
         Long start = System.currentTimeMillis();
         ExecutorService exec = Executors.newCachedThreadPool();
         List<Future<String>> list = new ArrayList<>();
