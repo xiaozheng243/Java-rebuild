@@ -2,9 +2,12 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="4014a513-f664-4da0-8500-8228d30cc106" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/src/javabasic/threaddemo/VolatileDemo.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/javabasic/EnumDemo.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/javabasic/EnumTest.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../java-demo/Chapter1/高并发.md" beforeDir="false" afterPath="$PROJECT_DIR$/../../java-demo/Chapter1/高并发.md" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/javaBasic/javabasic/threaddemo/ScheduleDemo.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/javaBasic/javabasic/threaddemo/ScheduleDemo.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/javabasic/ValuesDemo.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/javabasic/ValuesDemo.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/javabasic/threaddemo/VolatileDemo.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/javabasic/threaddemo/VolatileDemo.java" afterDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/out/" />
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
@@ -30,11 +33,38 @@
           </provider>
         </entry>
       </file>
-      <file pinned="false" current-in-tab="true">
+      <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/javabasic/threaddemo/VolatileDemo.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="85">
-              <caret line="5" lean-forward="true" selection-start-line="5" selection-end-line="5" />
+            <state relative-caret-position="119">
+              <caret line="7" selection-start-line="7" selection-end-line="7" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/javabasic/EnumDemo.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="102">
+              <caret line="6" column="2" selection-start-line="6" selection-start-column="2" selection-end-line="6" selection-end-column="2" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/src/javabasic/ValuesDemo.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="255">
+              <caret line="15" column="5" selection-start-line="15" selection-start-column="5" selection-end-line="15" selection-end-column="5" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/javabasic/EnumTest.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="119">
+              <caret line="7" column="5" selection-start-line="7" selection-start-column="5" selection-end-line="7" selection-end-column="5" />
             </state>
           </provider>
         </entry>
@@ -80,17 +110,18 @@
         <option value="$PROJECT_DIR$/src/javabasic/threaddemo/PriorityDemo.java" />
         <option value="$PROJECT_DIR$/src/javabasic/threaddemo/DaemonDemo.java" />
         <option value="$PROJECT_DIR$/src/javabasic/threaddemo/SyncDemo.java" />
-        <option value="$PROJECT_DIR$/src/javabasic/ValuesDemo.java" />
         <option value="$PROJECT_DIR$/src/javabasic/threaddemo/ThreadLocalDemo.java" />
         <option value="$PROJECT_DIR$/src/javabasic/threaddemo/TaskWithResult.java" />
         <option value="$PROJECT_DIR$/src/javabasic/practiceDemo/FixedExecutorDemo.java" />
         <option value="$PROJECT_DIR$/src/javabasic/threaddemo/ScheduleDemo.java" />
         <option value="$PROJECT_DIR$/src/javabasic/threaddemo/VolatileDemo.java" />
+        <option value="$PROJECT_DIR$/src/javabasic/EnumTest.java" />
+        <option value="$PROJECT_DIR$/src/javabasic/EnumDemo.java" />
+        <option value="$PROJECT_DIR$/src/javabasic/ValuesDemo.java" />
       </list>
     </option>
   </component>
-  <component name="ProjectFrameBounds" extendedState="1">
-    <option name="x" value="444" />
+  <component name="ProjectFrameBounds">
     <option name="y" value="23" />
     <option name="width" value="1366" />
     <option name="height" value="694" />
@@ -103,7 +134,6 @@
       <foldersAlwaysOnTop value="true" />
     </navigator>
     <panes>
-      <pane id="PackagesPane" />
       <pane id="ProjectPane">
         <subPane>
           <expand>
@@ -126,6 +156,7 @@
           <select />
         </subPane>
       </pane>
+      <pane id="PackagesPane" />
       <pane id="Scope" />
     </panes>
   </component>
@@ -136,7 +167,7 @@
     <property name="com.android.tools.idea.instantapp.provision.ProvisionBeforeRunTaskProvider.myTimeStamp" value="1552396342353" />
     <property name="last_opened_file_path" value="$PROJECT_DIR$" />
     <property name="restartRequiresConfirmation" value="false" />
-    <property name="settings.editor.selected.configurable" value="reference.settingsdialog.IDE.editor.colors.Color Scheme Font" />
+    <property name="settings.editor.selected.configurable" value="preferences.keymap" />
   </component>
   <component name="RunDashboard">
     <option name="ruleStates">
@@ -150,7 +181,7 @@
       </list>
     </option>
   </component>
-  <component name="RunManager" selected="Application.ScheduleDemo">
+  <component name="RunManager" selected="Application.EnumTest">
     <configuration name="DaemonDemo" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
       <option name="MAIN_CLASS_NAME" value="javabasic.threaddemo.DaemonDemo" />
       <module name="javaBasic" />
@@ -164,12 +195,12 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="FixedExecutorDemo" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="javabasic.practiceDemo.FixedExecutorDemo" />
+    <configuration name="EnumTest" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="javabasic.EnumTest" />
       <module name="javaBasic" />
       <extension name="coverage">
         <pattern>
-          <option name="PATTERN" value="javabasic.practiceDemo.*" />
+          <option name="PATTERN" value="javabasic.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
@@ -177,12 +208,12 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="PriorityDemo" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="javabasic.threaddemo.PriorityDemo" />
+    <configuration name="FixedExecutorDemo" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="javabasic.practiceDemo.FixedExecutorDemo" />
       <module name="javaBasic" />
       <extension name="coverage">
         <pattern>
-          <option name="PATTERN" value="javabasic.threaddemo.*" />
+          <option name="PATTERN" value="javabasic.practiceDemo.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
@@ -218,11 +249,11 @@
     </configuration>
     <recent_temporary>
       <list>
+        <item itemvalue="Application.EnumTest" />
         <item itemvalue="Application.ScheduleDemo" />
         <item itemvalue="Application.FixedExecutorDemo" />
         <item itemvalue="Application.SyncDemo" />
         <item itemvalue="Application.DaemonDemo" />
-        <item itemvalue="Application.PriorityDemo" />
       </list>
     </recent_temporary>
   </component>
@@ -257,14 +288,19 @@
       <workItem from="1557143867040" duration="360000" />
       <workItem from="1557147868640" duration="356000" />
       <workItem from="1557232147056" duration="288000" />
+      <workItem from="1557235941313" duration="1491000" />
+      <workItem from="1557315057119" duration="268000" />
+      <workItem from="1557316356802" duration="842000" />
+      <workItem from="1557402857916" duration="99000" />
+      <workItem from="1557563449408" duration="122000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="35030000" />
+    <option name="totallyTimeSpent" value="37852000" />
   </component>
   <component name="ToolWindowManager">
-    <frame x="444" y="23" width="1366" height="694" extended-state="1" />
+    <frame x="0" y="23" width="1366" height="694" extended-state="0" />
     <editor active="true" />
     <layout>
       <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.19619326" />
@@ -276,7 +312,7 @@
       <window_info id="Favorites" order="6" side_tool="true" />
       <window_info anchor="bottom" id="Message" order="0" />
       <window_info anchor="bottom" id="Find" order="1" />
-      <window_info anchor="bottom" id="Run" order="2" weight="0.23434992" />
+      <window_info anchor="bottom" id="Run" order="2" weight="0.2680578" />
       <window_info anchor="bottom" id="Debug" order="3" weight="0.49598715" />
       <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
       <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
@@ -396,13 +432,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/javabasic/ValuesDemo.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="153">
-          <caret line="9" column="41" selection-start-line="9" selection-start-column="41" selection-end-line="9" selection-end-column="41" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/javabasic/threaddemo/SyncDemo.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="289">
@@ -482,6 +511,13 @@
         </state>
       </provider>
     </entry>
+    <entry file="jar:///Library/Java/JavaVirtualMachines/jdk1.8.0_172.jdk/Contents/Home/src.zip!/java/lang/reflect/Field.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-942">
+          <caret line="62" column="6" selection-start-line="62" selection-start-column="6" selection-end-line="62" selection-end-column="6" />
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/src/javabasic/practiceDemo/FixedExecutorDemo.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="476">
@@ -489,6 +525,27 @@
           <folding>
             <element signature="imports" expanded="true" />
           </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/javabasic/threaddemo/VolatileDemo.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="119">
+          <caret line="7" selection-start-line="7" selection-end-line="7" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/javabasic/EnumDemo.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="102">
+          <caret line="6" column="2" selection-start-line="6" selection-start-column="2" selection-end-line="6" selection-end-column="2" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/javabasic/EnumTest.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="119">
+          <caret line="7" column="5" selection-start-line="7" selection-start-column="5" selection-end-line="7" selection-end-column="5" />
         </state>
       </provider>
     </entry>
@@ -505,10 +562,10 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/javabasic/threaddemo/VolatileDemo.java">
+    <entry file="file://$PROJECT_DIR$/src/javabasic/ValuesDemo.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="85">
-          <caret line="5" lean-forward="true" selection-start-line="5" selection-end-line="5" />
+        <state relative-caret-position="255">
+          <caret line="15" column="5" selection-start-line="15" selection-start-column="5" selection-end-line="15" selection-end-column="5" />
         </state>
       </provider>
     </entry>
