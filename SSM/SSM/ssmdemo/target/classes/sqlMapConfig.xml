@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE configuration
+        PUBLIC "-//mybatis.org//DTD Config 3.0//EN"
+        "http://mybatis.org/dtd/mybatis-3-config.dtd">
+<configuration>
+<!--    <typeAliases>-->
+<!--        <package name="online.yuluo.entity"/>-->
+<!--    </typeAliases>-->
+<!--    <mappers>-->
+<!--        &lt;!&ndash;<mapper resource="cn/happy/entity/IUserInfoDAO.xml" /> &ndash;&gt;-->
+<!--&lt;!&ndash;        <package name="online.yuluo.mapper"/>&ndash;&gt;-->
+<!--        <mapper resource="online.yuluo.mapper.IUserInfoDao.xml"/>-->
+<!--    </mappers>-->
+</configuration>

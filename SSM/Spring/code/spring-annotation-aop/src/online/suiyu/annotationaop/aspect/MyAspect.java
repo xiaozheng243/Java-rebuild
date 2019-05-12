@@ -17,7 +17,7 @@ public class MyAspect {
 
     @Around(value = "MyAspect.myAspect()")
     public void aroundLog(ProceedingJoinPoint joinPoint) {
-        System.out.println("开始处增强");
+        System.out.println(this.getClass()+"开始处增强");
         try {
             joinPoint.proceed();
         } catch (Throwable throwable) {
