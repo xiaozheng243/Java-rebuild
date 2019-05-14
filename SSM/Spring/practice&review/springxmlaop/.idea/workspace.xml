@@ -1,7 +1,11 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="564c5e04-caac-42d9-a4f6-f4a894364f2f" name="Default Changelist" comment="" />
+    <list default="true" id="564c5e04-caac-42d9-a4f6-f4a894364f2f" name="Default Changelist" comment="">
+      <change afterPath="$PROJECT_DIR$/../../../../Algorithm/src/QuickSort.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../../Algorithm/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../../../../Algorithm/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../../Algorithm/out/production/Algorithm/BubbleSort.class" beforeDir="false" afterPath="$PROJECT_DIR$/../../../../Algorithm/out/production/Algorithm/BubbleSort.class" afterDir="false" />
+    </list>
     <ignored path="$PROJECT_DIR$/out/" />
     <ignored path="$PROJECT_DIR$/target/" />
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
@@ -60,7 +64,7 @@
         <entry file="file://$PROJECT_DIR$/src/main/resources/applicationContext.xml">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="271">
-              <caret line="17" column="16" lean-forward="true" selection-start-line="17" selection-start-column="16" selection-end-line="17" selection-end-column="16" />
+              <caret line="17" column="16" selection-start-line="17" selection-start-column="16" selection-end-line="17" selection-end-column="16" />
             </state>
           </provider>
         </entry>
@@ -115,7 +119,6 @@
     </navigator>
     <panes>
       <pane id="PackagesPane" />
-      <pane id="Scope" />
       <pane id="ProjectPane">
         <subPane>
           <expand>
@@ -191,6 +194,7 @@
           <select />
         </subPane>
       </pane>
+      <pane id="Scope" />
     </panes>
   </component>
   <component name="PropertiesComponent">
@@ -253,6 +257,7 @@
       <workItem from="1557822849107" duration="246000" />
       <workItem from="1557827238936" duration="3687000" />
       <workItem from="1557834213502" duration="37000" />
+      <workItem from="1557874143628" duration="108000" />
     </task>
     <servers />
   </component>
@@ -289,7 +294,7 @@
     </history-entry>
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="3970000" />
+    <option name="totallyTimeSpent" value="4078000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="-8" y="-8" width="1382" height="784" extended-state="6" />
@@ -407,7 +412,7 @@
     <entry file="file://$PROJECT_DIR$/src/main/resources/applicationContext.xml">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="271">
-          <caret line="17" column="16" lean-forward="true" selection-start-line="17" selection-start-column="16" selection-end-line="17" selection-end-column="16" />
+          <caret line="17" column="16" selection-start-line="17" selection-start-column="16" selection-end-line="17" selection-end-column="16" />
         </state>
       </provider>
     </entry>
