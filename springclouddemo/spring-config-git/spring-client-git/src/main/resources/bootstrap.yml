@@ -1,0 +1,9 @@
+spring:
+  cloud:
+    config:
+      name: spring-config # 对应applition部分
+      profile: dev # 对应profile
+      uri: http://localhost:8000 #配置中心的具体位置
+      label: master
+#      discovery:
+#        service-id:  #指定配置中心的service-id，便于高可用配置集群

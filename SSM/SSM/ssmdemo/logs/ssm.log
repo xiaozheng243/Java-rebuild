@@ -1,0 +1,3 @@
+[INFO] [2019-05-14 08:34:30][org.springframework.context.support.ClassPathXmlApplicationContext]Refreshing org.springframework.context.support.ClassPathXmlApplicationContext@ea4a92b: startup date [Tue May 14 08:34:30 CST 2019]; root of context hierarchy
+[INFO] [2019-05-14 08:34:30][org.springframework.beans.factory.xml.XmlBeanDefinitionReader]Loading XML bean definitions from class path resource [applicationContext.xml]
+[INFO] [2019-05-14 08:34:31][org.springframework.context.support.PropertySourcesPlaceholderConfigurer]Loading properties file from class path resource [jdbc.properties]

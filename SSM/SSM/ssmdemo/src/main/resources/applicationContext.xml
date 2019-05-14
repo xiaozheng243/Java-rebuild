@@ -7,6 +7,9 @@
 						http://www.springframework.org/schema/context http://www.springframework.org/schema/context/spring-context-4.2.xsd
 						http://www.springframework.org/schema/tx http://www.springframework.org/schema/tx/spring-tx-4.2.xsd">
 
+    <!--    Spring IOC-->
+    <bean id="userService" class="online.yuluo.service.impl.UserService"/>
+
     <context:property-placeholder location="classpath:jdbc.properties"/>
     <!--druid连接池-->
     <bean id="dataSource" class="com.alibaba.druid.pool.DruidDataSource">
