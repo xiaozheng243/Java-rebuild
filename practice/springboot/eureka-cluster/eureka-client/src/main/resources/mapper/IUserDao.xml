@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN"
+        "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+
+<mapper namespace="online.yuluo.eurekaclient.online.yuluo.dao.IUserDao">
+    <select id="getUserInfoById" resultType="online.yuluo.eurekaclient.online.yuluo.entity.UserInfoVO">
+        select * from users where id = #{id,jdbcType=NUMERIC}
+    </select>
+</mapper>
