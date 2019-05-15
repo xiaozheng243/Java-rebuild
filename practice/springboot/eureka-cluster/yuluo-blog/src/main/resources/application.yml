@@ -1,0 +1,10 @@
+server:
+  port: 8002
+
+spring:
+  application:
+    name: yuluo-blog
+eureka:
+  client:
+    service-url:
+      defaultZone: http://peer1:7001/eureka/,http://peer2:7002/eureka/

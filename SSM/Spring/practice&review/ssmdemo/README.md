@@ -1,0 +1,7 @@
+## ssm加载顺序
+
+首先，项目启动后将会加载web.xml配置文件，web.xml中配置了spring的applicationContext配置，springmvc的dispatcherservlet，指定springmvc配置等
+
+applicationContext.xml主要配置一些要使用的bean、指定mybatis扫描和开启事务等
+
+springmvc.xml主要配置包扫描
