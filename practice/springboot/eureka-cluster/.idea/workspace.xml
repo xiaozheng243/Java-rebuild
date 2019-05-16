@@ -2,11 +2,7 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="50213ded-4a0c-4e10-9ea3-8e27f49631be" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/yuluo-blog/src/main/java/online/yuluo/yuluoblog/online/yuluo/feign/impl/HelloRemoteImpl.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/READMD.md" beforeDir="false" afterPath="$PROJECT_DIR$/READMD.md" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/yuluo-blog/src/main/java/online/yuluo/yuluoblog/online/yuluo/feign/HelloRemote.java" beforeDir="false" afterPath="$PROJECT_DIR$/yuluo-blog/src/main/java/online/yuluo/yuluoblog/online/yuluo/feign/HelloRemote.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/yuluo-blog/src/main/resources/application.yml" beforeDir="false" afterPath="$PROJECT_DIR$/yuluo-blog/src/main/resources/application.yml" afterDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/out/" />
     <ignored path="$PROJECT_DIR$/eureka-server/target/" />
@@ -48,11 +44,11 @@
           </provider>
         </entry>
       </file>
-      <file pinned="false" current-in-tab="false">
+      <file pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/yuluo-blog/src/main/java/online/yuluo/yuluoblog/online/yuluo/feign/HelloRemote.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="204">
-              <caret line="12" column="54" lean-forward="true" selection-start-line="12" selection-start-column="4" selection-end-line="12" selection-end-column="54" />
+            <state relative-caret-position="170">
+              <caret line="10" column="8" selection-start-line="10" selection-start-column="8" selection-end-line="10" selection-end-column="8" />
               <folding>
                 <element signature="imports" expanded="true" />
               </folding>
@@ -69,13 +65,12 @@
           </provider>
         </entry>
       </file>
-      <file pinned="false" current-in-tab="true">
+      <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/yuluo-blog/src/main/java/online/yuluo/yuluoblog/online/yuluo/feign/impl/HelloRemoteImpl.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="136">
-              <caret line="8" column="28" selection-start-line="8" selection-start-column="13" selection-end-line="8" selection-end-column="28" />
+            <state relative-caret-position="68">
+              <caret line="4" column="48" lean-forward="true" selection-start-line="4" selection-start-column="48" selection-end-line="4" selection-end-column="48" />
               <folding>
-                <element signature="imports" expanded="true" />
                 <element signature="e#292#293#0" expanded="true" />
                 <element signature="e#319#320#0" expanded="true" />
               </folding>
@@ -86,8 +81,8 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/yuluo-blog/src/main/java/online/yuluo/yuluoblog/online/yuluo/controller/UserInfoController.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="290">
-              <caret line="18" column="43" lean-forward="true" selection-start-line="18" selection-start-column="43" selection-end-line="18" selection-end-column="43" />
+            <state relative-caret-position="163">
+              <caret line="12" lean-forward="true" selection-start-line="12" selection-end-line="12" />
               <folding>
                 <element signature="imports" expanded="true" />
                 <element signature="e#735#736#0" expanded="true" />
@@ -158,8 +153,8 @@
         <option value="$PROJECT_DIR$/eureka-client/src/main/resources/application.yml" />
         <option value="$PROJECT_DIR$/yuluo-blog/pom.xml" />
         <option value="$PROJECT_DIR$/yuluo-blog/src/main/resources/application.yml" />
-        <option value="$PROJECT_DIR$/yuluo-blog/src/main/java/online/yuluo/yuluoblog/online/yuluo/feign/HelloRemote.java" />
         <option value="$PROJECT_DIR$/yuluo-blog/src/main/java/online/yuluo/yuluoblog/online/yuluo/feign/impl/HelloRemoteImpl.java" />
+        <option value="$PROJECT_DIR$/yuluo-blog/src/main/java/online/yuluo/yuluoblog/online/yuluo/feign/HelloRemote.java" />
       </list>
     </option>
   </component>
@@ -427,7 +422,7 @@
       <workItem from="1557889525751" duration="8064000" />
       <workItem from="1557906909364" duration="3369000" />
       <workItem from="1557911678952" duration="4914000" />
-      <workItem from="1557964166887" duration="3560000" />
+      <workItem from="1557964166887" duration="4428000" />
     </task>
     <task id="LOCAL-00001" summary=":rocket: :sparkles: :loud_sound: eureka集群">
       <created>1557903406809</created>
@@ -447,13 +442,12 @@
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="20133000" />
+    <option name="totallyTimeSpent" value="21001000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="-8" y="-8" width="1382" height="784" extended-state="6" />
-    <editor active="true" />
     <layout>
-      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.20644216" />
+      <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.20644216" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
       <window_info id="Image Layers" order="2" />
       <window_info id="Designer" order="3" />
@@ -476,7 +470,7 @@
       <window_info anchor="bottom" id="Spring" order="12" />
       <window_info anchor="bottom" id="Java Enterprise" order="13" />
       <window_info anchor="bottom" id="Messages" order="14" />
-      <window_info anchor="bottom" id="Run Dashboard" order="15" sideWeight="0.49926794" visible="true" weight="0.25705793" />
+      <window_info active="true" anchor="bottom" id="Run Dashboard" order="15" sideWeight="0.49926794" visible="true" weight="0.28231797" />
       <window_info anchor="right" id="Commander" internal_type="SLIDING" order="0" type="SLIDING" weight="0.4" />
       <window_info anchor="right" id="Ant Build" order="1" weight="0.25" />
       <window_info anchor="right" content_ui="combo" id="Hierarchy" order="2" weight="0.25" />
@@ -714,10 +708,17 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/yuluo-blog/src/main/resources/application.yml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="204">
+          <caret line="12" column="17" lean-forward="true" selection-start-line="12" selection-start-column="17" selection-end-line="12" selection-end-column="17" />
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/yuluo-blog/src/main/java/online/yuluo/yuluoblog/online/yuluo/controller/UserInfoController.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="290">
-          <caret line="18" column="43" lean-forward="true" selection-start-line="18" selection-start-column="43" selection-end-line="18" selection-end-column="43" />
+        <state relative-caret-position="163">
+          <caret line="12" lean-forward="true" selection-start-line="12" selection-end-line="12" />
           <folding>
             <element signature="imports" expanded="true" />
             <element signature="e#735#736#0" expanded="true" />
@@ -726,31 +727,23 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/yuluo-blog/src/main/resources/application.yml">
+    <entry file="file://$PROJECT_DIR$/yuluo-blog/src/main/java/online/yuluo/yuluoblog/online/yuluo/feign/impl/HelloRemoteImpl.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="204">
-          <caret line="12" column="17" lean-forward="true" selection-start-line="12" selection-start-column="17" selection-end-line="12" selection-end-column="17" />
+        <state relative-caret-position="68">
+          <caret line="4" column="48" lean-forward="true" selection-start-line="4" selection-start-column="48" selection-end-line="4" selection-end-column="48" />
+          <folding>
+            <element signature="e#292#293#0" expanded="true" />
+            <element signature="e#319#320#0" expanded="true" />
+          </folding>
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/yuluo-blog/src/main/java/online/yuluo/yuluoblog/online/yuluo/feign/HelloRemote.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="204">
-          <caret line="12" column="54" lean-forward="true" selection-start-line="12" selection-start-column="4" selection-end-line="12" selection-end-column="54" />
+        <state relative-caret-position="170">
+          <caret line="10" column="8" selection-start-line="10" selection-start-column="8" selection-end-line="10" selection-end-column="8" />
           <folding>
             <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/yuluo-blog/src/main/java/online/yuluo/yuluoblog/online/yuluo/feign/impl/HelloRemoteImpl.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="136">
-          <caret line="8" column="28" selection-start-line="8" selection-start-column="13" selection-end-line="8" selection-end-column="28" />
-          <folding>
-            <element signature="imports" expanded="true" />
-            <element signature="e#292#293#0" expanded="true" />
-            <element signature="e#319#320#0" expanded="true" />
           </folding>
         </state>
       </provider>
