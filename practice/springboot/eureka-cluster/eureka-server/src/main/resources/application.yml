@@ -4,6 +4,15 @@ server:
 spring:
   application:
     name: eureka-server
+#  cloud:
+#    config:
+#      server:
+#        git:
+#          uri: https://github.com/xiaozheng243/Java-rebuild/
+#          search-paths: practice/springboot/eureka-cluster/eureka-server/config-repo/
+#          username: xiaozheng243
+#          password: ******
+#          default-label: master
 eureka:
   client:
     fetch-registry: false

@@ -1,0 +1,16 @@
+server:
+  port: 8080
+
+eureka:
+  instance:
+    prefer-ip-address: true
+    instance-id: api-gateway
+  client:
+    service-url:
+      defaultZone: http://peer1:7001/eureka/,http://peer2:7002/eureka/
+zuul:
+  routes:
+    eureka-client:
+      path: /client-gateway/**
+#    yuluo-blog:
+#      path: /blog-gateway/**

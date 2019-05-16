@@ -122,3 +122,133 @@ public interface HelloRemote {
 
 *@Primary*主要是当存在多个接口实现且他们都被注册为bean时，告诉ioc容器默认使用哪个bean。
 
+### 添加熔断器监控
+
+[原文](http://www.ityouknow.com/springcloud/2017/05/18/hystrix-dashboard-turbine.html)
+
+## 远程配置Spring Cloud Config
+
+分布式远程配置管理方案。
+
+### 服务端
+
+以`eureka-server`作为配置管理服务端。
+
+#### 添加依赖
+
+```xml
+<dependency>
+    <groupId>org.springframework.cloud</groupId>
+    <artifactId>spring-cloud-config-server</artifactId>
+</dependency>
+```
+
+#### 添加注解
+
+在主程序上添加注解`@EnableConfigServer`
+
+#### 配置git信息
+
+```YML
+spring:
+  cloud:
+    config:
+      server:
+        git:
+          uri: https://github.com/xiaozheng243/Java-rebuild/
+          search-paths: practice/springboot/eureka-cluster/eureka-server/config-repo/
+          username: xiaozheng243
+          password: ******
+          default-label: master
+```
+
+
+
+### client端
+
+#### 添加依赖
+
+```xml
+<!--spring cloud config-->
+<dependency>
+    <groupId>org.springframework.cloud</groupId>
+    <artifactId>spring-cloud-starter-config</artifactId>
+</dependency>
+```
+
+#### 添加配置
+
+client需要添加一个`bootstrap.yml`配置文件，当项目启动时会自动执行参数请求服务端的参数
+
+```yaml
+spring:
+  cloud:
+    config:
+      name: application
+      uri: http://localhost:7001
+      label: master
+      profile: dev
+```
+
+## Spring cloud Zuul
+
+*涉及模块：another-eureka-server、eureka-client、api-gateway*
+
+[原文](http://www.ityouknow.com/springcloud/2017/06/01/gateway-service-zuul.html)
+
+其原理是，向消费者所注册的服务中心注册一个zuul-gateway服务，然后提供动态路由，监控，弹性，安全等的边缘服务。外部服务调用时只需要走zuul就行了，而不需要走原生应用！
+
+#### 添加依赖
+
+首先，需要创建一个新的module用以开发zuul-gateway，其特殊依赖为
+
+```xml
+ <!--eureka-->
+<dependency>
+    <groupId>org.springframework.cloud</groupId>
+    <artifactId>spring-cloud-starter-eureka</artifactId>
+</dependency>
+<!--zuul gateway-->
+<dependency>
+    <groupId>org.springframework.cloud</groupId>
+    <artifactId>spring-cloud-starter-zuul</artifactId>
+</dependency>
+```
+
+**应当注意的一个细节为，此次的springboot版本号为*1.5.3.RELEASE*，这是因为，本次所用到的依赖spring-cloud-starter-zuul与1.5.19.RELEASE版本冲突**
+
+#### 添加配置
+
+```yaml
+zuul:
+  routes:
+    eureka-client: # 被路由服务的application name
+      path: /client-gateway/** # 路由后可通过此路径访问该服务
+    yuluo-blog:
+      path: /blog-gateway/**
+```
+
+#### 添加注解
+
+给apiGatewayApplication添加`@EnableZuulProxy`来启动路由。
+
+*到此完毕，我们发现，这个过程只添加了一个新的服务，并没有修改原有注册中心与注册服务。*
+
+默认访问路径为<http://localhost:8001/user/getUserName>
+
+现在可通过zuul访问：<http://localhost:8080/client-gateway/user/getUserName>
+
+**如果没有指定服务地址的话，zuul会自动通过服务名称自动组装地址**，比如，当我尝试注释调某个服务的映射，zuul自动组装了地址：
+
+```yaml
+#    yuluo-blog: # 服务名
+#      path: /blog-gateway/**
+```
+
+其组装地址为<http://localhost:8080/yuluo-blog/getRemoteUser/2>
+
+http://[zuul_host]/[zuul_port]/[服务名]/正常地址
+
+**记录一个问题**
+
+当我访问原路径为<http://localhost:8001/user/getUserById/2>的方法时（此方法请求了数据库），路由必须访问<http://localhost:8080/client-gateway/user//getUserById/2>而非<http://localhost:8080/client-gateway/user/getUserById/2> 必须要多一个`/`。:cry:

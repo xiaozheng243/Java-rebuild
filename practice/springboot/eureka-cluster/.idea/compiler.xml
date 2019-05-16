@@ -10,10 +10,12 @@
         <module name="eureka-server" />
         <module name="yuluo-blog" />
         <module name="another-eureka-server" />
+        <module name="api-gateway" />
       </profile>
     </annotationProcessing>
     <bytecodeTargetLevel>
       <module name="another-eureka-server" target="1.8" />
+      <module name="api-gateway" target="1.8" />
       <module name="eureka-client" target="1.8" />
       <module name="eureka-server" target="1.8" />
       <module name="yuluo-blog" target="1.8" />
