@@ -190,6 +190,12 @@ spring:
       profile: dev
 ```
 
+## 配置中心服务化与高可用
+
+[原文](<http://www.ityouknow.com/springcloud/2017/05/25/springcloud-config-eureka.html>)
+
+简单来说就是上文中将github远程配置放到单个eureka服务器中，这样服务端与客户端耦合性很高，所以就是重新注册一个服务单门获取远程配置，然后客户端直接调用即可。
+
 ## Spring cloud Zuul
 
 *涉及模块：another-eureka-server、eureka-client、api-gateway*
@@ -252,3 +258,10 @@ http://[zuul_host]/[zuul_port]/[服务名]/正常地址
 **记录一个问题**
 
 当我访问原路径为<http://localhost:8001/user/getUserById/2>的方法时（此方法请求了数据库），路由必须访问<http://localhost:8080/client-gateway/user//getUserById/2>而非<http://localhost:8080/client-gateway/user/getUserById/2> 必须要多一个`/`。:cry:
+
+## 分布式链路跟踪
+
+[原文](<http://www.ityouknow.com/springcloud/2018/02/02/spring-cloud-sleuth-zipkin.html>)
+
+简单来说就是使用zipkin实现每一次服务请求的完整调用信息，它会记录所有服务调用之间的耗时。
+

@@ -6,6 +6,7 @@
       <module fileurl="file://$PROJECT_DIR$/api-gateway/api-gateway.iml" filepath="$PROJECT_DIR$/api-gateway/api-gateway.iml" />
       <module fileurl="file://$PROJECT_DIR$/eureka-client/eureka-client.iml" filepath="$PROJECT_DIR$/eureka-client/eureka-client.iml" />
       <module fileurl="file://$PROJECT_DIR$/eureka-server/eureka-server.iml" filepath="$PROJECT_DIR$/eureka-server/eureka-server.iml" />
+      <module fileurl="file://$PROJECT_DIR$/sleuth-zipkin/sleuth-zipkin.iml" filepath="$PROJECT_DIR$/sleuth-zipkin/sleuth-zipkin.iml" />
       <module fileurl="file://$PROJECT_DIR$/yuluo-blog/yuluo-blog.iml" filepath="$PROJECT_DIR$/yuluo-blog/yuluo-blog.iml" />
     </modules>
   </component>
