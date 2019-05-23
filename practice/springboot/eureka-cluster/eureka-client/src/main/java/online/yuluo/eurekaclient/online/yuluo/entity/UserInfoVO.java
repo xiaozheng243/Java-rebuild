@@ -1,6 +1,9 @@
 package online.yuluo.eurekaclient.online.yuluo.entity;
 
-public class UserInfoVO {
+import java.io.Serializable;
+
+public class UserInfoVO implements Serializable {
+
     private int id;
     private String name;
     private int age;

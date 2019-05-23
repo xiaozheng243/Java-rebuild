@@ -10,15 +10,17 @@
         <module name="eureka-client" />
         <module name="another-eureka-server" />
         <module name="api-gateway" />
-        <module name="yuluo-blog" />
         <module name="sleuth-zipkin" />
+        <module name="yuluo-blog" />
       </profile>
     </annotationProcessing>
     <bytecodeTargetLevel>
       <module name="another-eureka-server" target="1.8" />
       <module name="api-gateway" target="1.8" />
       <module name="api-gateway (1)" target="1.8" />
+      <module name="cloud-redis" target="1.8" />
       <module name="eureka-client" target="1.8" />
+      <module name="eureka-client (1)" target="1.8" />
       <module name="eureka-server" target="1.8" />
       <module name="sleuth-zipkin" target="1.8" />
       <module name="yuluo-blog" target="1.8" />

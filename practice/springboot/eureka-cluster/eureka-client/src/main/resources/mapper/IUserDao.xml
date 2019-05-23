@@ -6,4 +6,7 @@
     <select id="getUserInfoById" resultType="online.yuluo.eurekaclient.online.yuluo.entity.UserInfoVO">
         select * from users where id = #{id,jdbcType=NUMERIC}
     </select>
+    <select id="getAllUsers" resultType="online.yuluo.eurekaclient.online.yuluo.entity.UserInfoVO" useCache="true">
+        select * from users
+    </select>
 </mapper>

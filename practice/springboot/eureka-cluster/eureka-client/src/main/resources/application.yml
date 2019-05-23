@@ -14,13 +14,23 @@ spring:
       min-idle: 5
       max-wait-millis: 200
       max-total: 5
-
+  redis:
+    host: localhost
+    port: 6379
+    database: 8
+    pool:
+      max-active: 8
+      min-idle: 0
+      max-idle: 8
+      max-wait: -1
+    timeout: 0
+    password: admin123
 user:
   name: yuluo
 eureka:
   client:
     service-url:
-      defaultZone: http://peer1:7001/eureka/,http://peer2:7002/eureka/
+      defaultZone: http://peer1:7001/eureka/ #,http://peer2:7002/eureka/
 mybatis:
   mapper-locations: classpath:mapper/*.xml
   type-aliases-package: online.yuluo.entiry.UserInfoVO
