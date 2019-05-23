@@ -46,7 +46,7 @@ java.sql.SQLNonTransientConnectionException: Public Key Retrieval is not allowed
 
 #### 写入依赖
 
-本次服务发现使用的是Feign，因此，只需在服务调用方(消费者服务yuluo-blog)中的依赖中加入feign依赖即可。
+本次服务发现使用的是Feign，因此，只需在服务调用方(消费者服务yuluo-blog)的依赖中加入feign依赖即可。
 
 ```xml
 <dependency>
@@ -61,7 +61,7 @@ java.sql.SQLNonTransientConnectionException: Public Key Retrieval is not allowed
 
 #### 远程调用
 
-消费者需要创建一个FeignClient接口指向远程服务与接口才能真正调用远程生产者。
+消费者需要创建一个FeignClient接口指向远程服务与接口才能真正调用远程生产者接口。
 
 ```java
 @FeignClient(name = "eureka-client")
@@ -73,7 +73,7 @@ public interface HelloRemote {
 
 注意点：
 
-1. 注解`@FeignClient`中的name属性必须是生产者的`spring.application.name`配置，这样才能在注册中心定位
+1. 注解`@FeignClient`中的name属性必须是生产者的`spring.application.name`配置，这样才能在注册中心通过注册名定位
 2. `@RequestMapping`中的value值必须是生产者自身接口的地址（从类到方法的本地相对地址），且请求方式不能改变
 3. 方法名与参数列表要与生产者一致。
 
@@ -81,7 +81,7 @@ public interface HelloRemote {
 
 [原文](http://www.ityouknow.com/springcloud/2017/05/16/springcloud-hystrix.html)
 
-简单来说，当一个服务存在异常，无法向外提供功能时，调用者仍然会不停的访问，这会浪费大量的资源与时间。因此，我们需要在生产者存在异常时，当消费者想要调用它时，会执行快速失败，直接返回错误。
+简单来说，当一个服务存在异常，无法向外提供功能时，调用者仍然会不停的访问，这会浪费大量的资源与时间。因此，我们需要在生产者存在异常时，如果消费者尝试调用它，会执行快速失败，直接返回错误。
 
 ### Hystrix
 
@@ -112,7 +112,7 @@ public interface HelloRemote {
    		enabled: true
    ```
 
-2. 指定fallback，需要指定当生产者出现问题时，熔断出发的方法，创建一个类实现HelloRemote。
+2. 指定fallback，需要指定当生产者出现问题时，熔断触发的方法，创建一个类实现HelloRemote。
 
    要保证实现的方法其方法名与参数列表一致，建议直接复制。为了该类被发现，可以使用注解`@Component`注册一个bean。
 
@@ -120,7 +120,7 @@ public interface HelloRemote {
 
 如果调用接口时出现提示*无法注入，存在多个helloremote Bean*时，这并不会影响程序运行，可以尝试在接口上方加入注解`@primary`。
 
-*@Primary*主要是当存在多个接口实现且他们都被注册为bean时，告诉ioc容器默认使用哪个bean。
+*@Primary*主要作用是当一个接口存在多个接口实现且他们都被注册为bean时，告诉ioc容器默认使用哪个bean。
 
 ### 添加熔断器监控
 
@@ -190,12 +190,6 @@ spring:
       profile: dev
 ```
 
-## 配置中心服务化与高可用
-
-[原文](<http://www.ityouknow.com/springcloud/2017/05/25/springcloud-config-eureka.html>)
-
-简单来说就是上文中将github远程配置放到单个eureka服务器中，这样服务端与客户端耦合性很高，所以就是重新注册一个服务单门获取远程配置，然后客户端直接调用即可。
-
 ## Spring cloud Zuul
 
 *涉及模块：another-eureka-server、eureka-client、api-gateway*
@@ -258,10 +252,3 @@ http://[zuul_host]/[zuul_port]/[服务名]/正常地址
 **记录一个问题**
 
 当我访问原路径为<http://localhost:8001/user/getUserById/2>的方法时（此方法请求了数据库），路由必须访问<http://localhost:8080/client-gateway/user//getUserById/2>而非<http://localhost:8080/client-gateway/user/getUserById/2> 必须要多一个`/`。:cry:
-
-## 分布式链路跟踪
-
-[原文](<http://www.ityouknow.com/springcloud/2018/02/02/spring-cloud-sleuth-zipkin.html>)
-
-简单来说就是使用zipkin实现每一次服务请求的完整调用信息，它会记录所有服务调用之间的耗时。
-
