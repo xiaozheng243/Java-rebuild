@@ -13,7 +13,7 @@ public class MergeSort {
         }
     }
 
-    public static void sort(int[] arr, int left, int right, int[] temp) {
+    private static void sort(int[] arr, int left, int right, int[] temp) {
         if (left < right) {
             int mid = (left + right) / 2;
             sort(arr, left, mid, temp);
@@ -22,7 +22,7 @@ public class MergeSort {
         }
     }
 
-    public static void mergeSort(int[] arr, int left, int mid, int right, int[] temp) {
+    private static void mergeSort(int[] arr, int left, int mid, int right, int[] temp) {
         int i = left, j = mid + 1;
         int t = 0;
         while (i <= mid && j <= right) {
